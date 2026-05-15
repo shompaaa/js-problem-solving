@@ -1,3 +1,5 @@
+const numbers = [12, 43, 49, 50, 117, 128, 45];
+
 function oddAverage(numbers) {
   const oddNumbers = [];
   for (const number of numbers) {
@@ -15,6 +17,5 @@ function oddAverage(numbers) {
   return oddAverage;
 }
 
-const numbers = [12, 43, 49, 50, 117, 128, 45];
 const avg = oddAverage(numbers);
 console.log('The average of odd number is:',avg);

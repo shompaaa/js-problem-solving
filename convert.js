@@ -1,4 +1,3 @@
-
 // Task-1: Inch to Feet
 
 function inchToFeet(inch){
