@@ -14,18 +14,18 @@ function divide(num1,num2){
 }
 
 function calculator(a,b,operation){
-    if(operation == 'add'){
+    if(operation === 'add'){
         const result = add(a,b)
         return result
     }
-    else if(operation == 'subtract'){
+    else if(operation === 'subtract'){
         const result = subtract(a,b)
         return result
     }
-    else if (operation == 'multiply'){
+    else if (operation === 'multiply'){
         return multiply(a,b)
     }
-    else if(operation == 'divide'){
+    else if(operation === 'divide'){
         return divide(a,b)
     }
     else{
