@@ -1,3 +1,5 @@
+//Get the maximum number
+
 const scores = [25,65,27,38,45,99,100,42,38,88,85,75]
 
 function getHighestScores(scores){

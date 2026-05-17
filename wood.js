@@ -1,3 +1,5 @@
+//Get the total by multiplying their quantity
+
 function woodQuantity(chairQuantity,tableQuantity,bedQuantity){
     const perChairWood = 3
     const perTableWood =10

@@ -1,3 +1,5 @@
+//Get the minimum number fro an array
+
 const phonePrices = [15000,25000,32000,175000,22000,220000, 12000]
 
 function getMin(prices){

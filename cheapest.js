@@ -1,3 +1,6 @@
+
+//Get the cheapest phone as an object from array of object
+
 const phones = [
     {name:'Samsung S24 Ultra',price: 155000, camera: '100MP',color: 'Black'},
     {name:'Infinix',price: 35000, camera: '40MP',color: 'Brown'},
