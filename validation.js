@@ -34,3 +34,14 @@ function getPrice(product){
 
 const price = getPrice({name: 'Chulkani Molom', price: 120, color: 'Green'})
 console.log(price);
+
+
+function getSecond(numbers){
+    if(Array.isArray(numbers)===false){
+        return 'PLease provide an array'
+    }
+    const second = numbers[1]
+    return second
+}
+const result2 = getSecond([1,45,25])
+console.log(result2);
