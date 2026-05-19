@@ -40,3 +40,21 @@ if(fileName.includes('.pdf') || fileName.includes('.docx') || fileName.startsWit
 else{
     console.log('Delete')
 }
+
+
+/** Problem 05 - ( PH Email Generator )  */
+var student= { name: "jhankar" , roll: 1014 ,department: "cse" };
+const getName = student.name
+const getRoll = student.roll
+const getDept = student.department
+const generatedMail = getName+getRoll
+console.log(generatedMail+'.'+getDept+'@ph.ac.bd');
+
+
+
+/** Problem 06 :  (Current Salary )  */
+var experience = 30;
+var startingSalary = 45000;
+var currentSalary = startingSalary * Math.pow(1.05, experience);
+
+console.log(currentSalary.toFixed(2));
