@@ -67,3 +67,52 @@ function isSame(arr1, arr2) {
 
 
 
+
+/**Problem-05: Solution From GPT */
+
+function resultReport(marks) {
+  // Check if input is an array
+  if (!Array.isArray(marks)) {
+    return "Invalid";
+  }
+
+  let total = 0;
+  let pass = 0;
+  let fail = 0;
+
+  for (let mark of marks) {
+    total += mark;
+
+    if (mark >= 40) {
+      pass++;
+    } else {
+      fail++;
+    }
+  }
+
+  // Handle empty array case
+  let finalScore =
+    marks.length === 0 ? 0 : Math.round(total / marks.length);
+
+  return {
+    finalScore: finalScore,
+    pass: pass,
+    fail: fail,
+  };
+}
+
+// Sample Test
+console.log(resultReport([]));
+// { finalScore: 0, pass: 0, fail: 0 }
+
+console.log(resultReport([98, 87, 67, 91, 92, 33, 87]));
+// { finalScore: 79, pass: 6, fail: 1 }
+
+console.log(resultReport([99, 87, 67, 12, 87]));
+// { finalScore: 70, pass: 4, fail: 1 }
+
+console.log(resultReport([99]));
+// { finalScore: 99, pass: 1, fail: 0 }
+
+console.log(resultReport(100));
+// Invalid
